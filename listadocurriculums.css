@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F6F1F1;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+.logo{
+    position: relative;
+    width: 20%;
+}
+.logoDibujo{
+    width: 100%;
+}
+header{
+    position: sticky;
+    padding: 20px;
+    background-color: #19A7CE;
+    top: 0;
+    z-index: 1;
+}
+.contenedor{
+    min-height: 350px;
+    margin-top: 7.5%;
+    margin-left: 10%;
+    width: 40%;
+    background-color: white;
+    z-index:1;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 1%;
+}
+.contedorCV:hover>a>#cruz{
+    visibility: visible;
+   
+}
+.contedorCV:hover>a>#simboloEdit{
+    visibility: visible;
+   
+}
+#cruz{
+    color: rgb(141, 139, 139);
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    visibility: hidden;
+}
+#cruz:hover{
+    color: black;
+}
+#simboloEdit{
+    color: rgb(141, 139, 139);
+    position: absolute;
+    right: 16%;
+    top: 3%;
+    visibility: hidden;
+}
+#simboloEdit:hover{
+    color: black;
+}
+.contadorUsuarios{
+    color: grey;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.contedorCV{
+    width: 40%;
+    position: relative;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 2%;
+    margin-left: 2.5%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+.imgUsuario{
+    margin-top: 7%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+.modificar{
+    background-color: #0091f8;
+    padding: 10px 20px ;
+    margin-top: 10%;
+}
+.labelMenu{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+#menuOpcionesUsuario{
+    visibility: hidden;
+    position: absolute;
+}
+#cruzHeader{
+    font-size: xx-large;
+    visibility: visible;
+    top: 2%;
+    color: #ccc9c9;
+    right: 2%;
+    position: absolute;
+    visibility: hidden;
+}
+#cruzHeader:hover{
+    color: #535252;
+}
+#menuHeader{
+    color: #ffffff;
+    font-size: xxx-large;
+}
+#menuHeader:hover{
+    color: #d6d3d3;
+}
+#menuOpcionesUsuario:checked~.menu{
+    transition: 0.4s;
+    width: 25%;
+}
+#menuOpcionesUsuario:checked~.menu>#clicarCruz>#cruzHeader{
+    visibility: visible;
+}
+#menuOpcionesUsuario:checked~.labelMenu>#menuHeader{
+    visibility: hidden;
+}
+#menuOpcionesUsuario:checked~.menu>.infoUsuarioMenu{
+    visibility: visible;
+}
+#menuOpcionesUsuario:checked~.menu>.divOpcionesMenu{
+    visibility: visible;
+}
+.menu{
+    transition: 0.4s;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    width: 0%;
+    height: 768px;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+}
+.desc{
+    margin-left: 58%;
+    color: #02556c;
+}
+.centro{
+    margin-left: 30%;
+    color: #02556c;
+}
+.infoUsuarioMenu{
+    background-color: #d9d8d8;
+    box-shadow: 0px 2px 10px rgba(130, 130, 130, 0.3);
+    position: absolute;
+    top: 8%;
+    width: 80%;
+    left: 8%;
+    padding-top: 4%;
+    visibility: hidden;
+    padding-bottom: 4%;
+}
+.nameUserMenu{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+}
+.divOpcionesMenu{
+    margin-top: 80%;
+    visibility: hidden;
+    
+}
+.imgMenu{
+    width: 40%;
+    position: relative;
+    left: 7%;
+    height: 81.9167px;
+    border-radius: 50%;
+}
+.opacidadTodo{
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .eliminarUsuario{
+    width: 100%;
+    height: 100%;
+  }
+  .borrarUser{
+    position: fixed;
+    background-color: #ffffff;
+    width: 40%;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    z-index: 3;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    font-family: 'Jost', sans-serif;
+  }
+  #botonBorrar{
+    background-color: red;
+    color: #ffffff;
+    padding: 2%;
+    font-family: 'Jost', sans-serif;
+    font-size: large;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 3%;
+    border: 0;
+    border-radius: 4%;
+    box-shadow: 0px 2px 10px rgba(244, 42, 45, 0.3);
+  }
+  #cerrarEliminarUser{
+    background-color: white;
+    border: 0;
+    color: #535252;
+    position: absolute;
+    right: 4%;
+    top: 10%;
+  }
+  #cerrarEliminarUser:hover{
+    color: black;
+  }
+  .font{
+    font-family: 'Jost', sans-serif;
+    margin-left: 5%;
+  }
+  #botonBorrar:hover{
+    background-color: #ac080e;
+    box-shadow: 0px 2px 10px rgba(243, 48, 48, 0.6);
+  }
+.opcionesMenu{
+    color: #535252;
+    text-decoration: none;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+.opcionesMenu:hover{
+    background-color: #d6d3d3;
+    text-decoration: underline;
+}
+
+.mostrarcontenido{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    right: 5%;
+    top: 20%;
+}
+footer{
+    background-color: #0091f8;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-top: 11%;
+}

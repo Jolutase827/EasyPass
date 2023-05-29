@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('fondoEscritorio.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logo{
+    position: relative;
+    width: 20%;
+}
+.logoDibujo{
+    width: 100%;
+}
+[class*="botonFondoAzul"]{
+    text-decoration: none;
+    color: #F6F1F1;
+    font-family: 'Jost', sans-serif;
+    background-color: #146C94;
+    font-size: large;
+    border: 0;
+    border-radius: 5%;
+    padding: 1%;
+    padding-left: 9%;
+    padding-right: 9%;
+    margin: 1%;
+    line-height: 50px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+a[class*="botonFondoAzul"]:hover{
+    background-color: #337594;
+    transition: 0.4s;
+}
+.botonesUsuario{
+    position: absolute;
+    width: 30%;
+    right: 3%;
+    top: 25%;
+}
+#circuloInicio{
+    width: 65%;
+    min-height: 650px;
+    border-radius: 50% ;
+    position: relative;
+    left: -25%;
+    background-color: white;
+}
+#texto-circulo{
+    font-family: 'Josefin Slab', serif;
+    position: absolute;
+    top: 14%;
+    left: 45%;
+    font-size: xxx-large;
+    font-weight: 900;
+    width: 45%;
+}
+
+.botonFondoAzul-empezar{
+    position: absolute;
+    left: 46%;
+    top: 60%;
+}
+
+header{
+    position: relative;
+    padding: 2%;
+     /*background-color: #19A7CE;*/
+    z-index: 0;
+}
+
+.nombreUsuario{
+    position: absolute;
+    width: 20%;
+    right: 3%;
+    top: 20%;
+    background-color: #337594;
+    padding: 1%;
+    border-radius: 4%;
+    color: white;
+    transition: 0.2s;
+}
+.nombreUsuario:hover{
+  background-color: #2a5e76;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+#menuOpcionesUsuario:checked~.opcionesUsuario{
+  visibility: visible;
+  height: 40%;
+}
+.opcionesUsuario{
+  position: absolute;
+  width: 22.1%;
+  text-align: center;
+  height: 0%;
+  right: 2%;
+  padding: 1%;
+  top: 68%;
+  visibility: hidden;
+}
+.opcionUsuario{
+  height: 40px;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  display: block;
+}
+.opcionUsuario:hover{
+  background-color: #f7f7f7;
+  text-decoration: underline;
+}
+#menuOpcionesUsuario{
+  visibility: hidden;
+}
+#texto{
+    font-family: 'Jost', sans-serif;
+    font-size: large;
+    margin-top: 7%;
+}
+
+#imagenUsuar{
+    float: left;
+    width: 25%;
+    border-radius: 50%;
+    height: 51.2px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+  ;
+  
+}
+#menuOpcionesUsuario:checked~.labelMenu>.nombreUsuario>#expand_more{
+  visibility: hidden;
+}
+#menuOpcionesUsuario:checked~.labelMenu>.nombreUsuario>#expand_less{
+  visibility: visible;
+}
+
+#expand_more{
+  float: left;
+  margin-top: 7.5%;
+  margin-left: 5%;
+}
+#expand_less{
+  position: absolute;
+  visibility: hidden;
+  top: 37%;
+  left: 32%;
+}
+.crearCV{
+  padding-left: 6.35%;
+  padding-right: 6.35%;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  top: 20%;
+  right: 27%;
+  border-radius: 3%;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  color: #444444;
+  font-size: x-large;
+  background-color: #c4c8c9;
+}
+.crearCV:hover{
+  background-color:#aeafb0 ;
+  color: black;
+}
+ 
+  /* Estilo del formulario */
+  form {
+    font-family: Arial, sans-serif;
+    position:absolute;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  #textoInfo{
+    color: #0091f8;
+  }
+  /* Estilo de los campos del formulario */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-top: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #444444;
+  }
+
+  
+  /* Estilo del botón de envío */
+  input[type="submit"] {
+    background-color: #0088cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+  
+  input[type="submit"]:hover {
+    background-color: #006699;
+    
+  }
+  
+  /* Estilo de los mensajes de error */
+  .errorNombre,
+  .errorEmail,
+  .errorContra {
+    margin: 0;
+    padding: 5px;
+    background-color: #f88c84;
+    color: rgb(57, 49, 49);
+    border-bottom: solid 3px;
+    border-color: #f63123;
+
+  }
+  .errorCon,
+  .errorNom{
+    float: left;
+    color: rgb(235, 5, 5);
+  }
+
+
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 100,
+  'opsz' 48;
+ 
+}
+#cerrarDiv{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  border: 0;
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  border-radius: 50%;
+  color: #006699;
+  transition: 0.7s;
+}
+#cerrarDiv:hover{
+  transition: 0.7s;
+  box-shadow: 0px 2px 10px rgba(4, 137, 247, 0.3);
+}
+
+
+#volver{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #006699;
+    color: white;
+    padding: 1.5%;
+    border-radius: 4%;
+}
+#volver:hover{
+    background-color: #014a6f;
+}
+  /* Estilo del mensaje de éxito */
+  #mensajeGuardado {
+    margin: 0;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    height: 370px;
+    margin-left: 25%;
+    margin-top: 39px;
+    margin-bottom: 10px;
+   
+  }
+  #iniciaSesion{
+    margin-top: 15px; 
+  }
+  #ainiciaSesion{
+    text-decoration: none;
+    color: #0091f8;
+  }
+  #ainiciaSesion:hover{
+    text-decoration:underline;
+  }
+
+  .opacidad{
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+#sobreNosotros{
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #0088cc;
+  text-align: center;
+}
+.contenedorInfo{
+  width: 100%;
+  height: 500px;
+  background-image:url('https://blog.nuoplanet.com/hubfs/Blog/edificios-inteligentes.jpg');
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+div[class*="info"]{
+  width: 28%;
+  height: 400px;
+  background-color: #f2f2f2;
+  display: inline-block;
+  margin-top: 5.5%;
+  margin-left: 3.5%;
+}
+.imgInfo{
+  width: 100%;
+  height: 50%;
+}
+.titInfo{
+width: 100%;
+text-align: center;
+font-family: Arial, sans-serif;
+margin-top: 4%;
+color: #006699;
+}
+p[class*="textInfo"]{
+  width: 80%;
+  text-align: center;
+  height: 30%;
+  margin-top: 5%;
+  margin-left: 10%;
+  font-family: Arial, sans-serif;
+}
+footer{
+  background-color: #0091f8;
+  width: 100%;
+  height: 90px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}

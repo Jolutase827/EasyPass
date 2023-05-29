@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE em SYSTEM "../XML/proyecto.dtd">
+<em>
+    <usuarios>
+        <root>
+            <usuario>
+                <nombre>root</nombre>
+                <contrasenya>1234</contrasenya>
+                <imagen>imagenUsuario.png</imagen>
+            </usuario>
+        </root>
+        <noroot>
+        <usuariosnoroot>
+            <usuario>
+                <nombre>Jose Luis</nombre>
+                <correo>cau01111@gmail.com</correo>
+                <contrasenya>1234</contrasenya>
+                <imagen>https://cdn01.segre.com/uploads/imagenes/bajacalidad/2022/06/02/_pacoretocat_ad1a584f.jpg?5b401d175a16dc2d57257136af48ed0a</imagen>
+                <mas_datos>
+                </mas_datos>
+            </usuario>
+            <usuario>
+                <nombre>marta</nombre>
+                <correo>cau01111@gmail.com</correo>
+                <contrasenya>1234</contrasenya>
+                <imagen>imagenUsuario.png</imagen>
+                <mas_datos>
+                </mas_datos>
+            </usuario>
+            <usuario>
+                <nombre>marcela</nombre>
+                <correo>cau01111@gmail.com</correo>
+                <contrasenya>1234</contrasenya>
+                <imagen>imagenUsuario.png</imagen>
+                <mas_datos>
+                </mas_datos>
+            </usuario>
+        </usuariosnoroot>
+            <empresas>
+            </empresas>
+        </noroot>
+        
+    </usuarios>
+</em>

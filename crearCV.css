@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F6F1F1;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+.logo{
+    position: relative;
+    width: 20%;
+}
+.logoDibujo{
+    width: 100%;
+}
+header{
+    position: sticky;
+    padding: 20px;
+    background-color: #19A7CE;
+    top: 0;
+    z-index: 1;
+}
+
+.labelMenu{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+#menuOpcionesUsuario{
+    visibility: hidden;
+    position: absolute;
+}
+#cruzHeader{
+    font-size: xx-large;
+    visibility: visible;
+    top: 2%;
+    color: #ccc9c9;
+    right: 2%;
+    position: absolute;
+    visibility: hidden;
+}
+#cruzHeader:hover{
+    color: #535252;
+}
+#menuHeader{
+    color: #ffffff;
+    font-size: xxx-large;
+}
+#menuHeader:hover{
+    color: #d6d3d3;
+}
+#menuOpcionesUsuario:checked~.menu{
+    transition: 0.4s;
+    width: 25%;
+}
+#menuOpcionesUsuario:checked~.menu>#clicarCruz>#cruzHeader{
+    visibility: visible;
+}
+#menuOpcionesUsuario:checked~.labelMenu>#menuHeader{
+    visibility: hidden;
+}
+#menuOpcionesUsuario:checked~.menu>.infoUsuarioMenu{
+    visibility: visible;
+}
+#menuOpcionesUsuario:checked~.menu>.divOpcionesMenu{
+    visibility: visible;
+}
+.menu{
+    transition: 0.4s;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    width: 0%;
+    height: 768px;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+}
+.infoUsuarioMenu{
+    background-color: #d9d8d8;
+    box-shadow: 0px 2px 10px rgba(130, 130, 130, 0.3);
+    position: absolute;
+    top: 8%;
+    width: 80%;
+    left: 8%;
+    padding-top: 4%;
+    visibility: hidden;
+    padding-bottom: 4%;
+}
+.nameUserMenu{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+}
+.divOpcionesMenu{
+    margin-top: 80%;
+    visibility: hidden;
+    
+}
+.imgMenu{
+    width: 40%;
+    position: relative;
+    left: 7%;
+    height: 81.9167px;
+    border-radius: 50%;
+}
+.opcionesMenu{
+    color: #535252;
+    text-decoration: none;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+.opcionesMenu:hover{
+    background-color: #d6d3d3;
+    text-decoration: underline;
+}
+
+.contenedor{
+    min-height: 350px;
+    margin-top: 7.5%;
+    margin-left: 10%;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 1%;
+    position: relative;
+}
+
+#tituloCV{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+.titulotext{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 18px;
+}
+#cruz{
+    color: #878787;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    visibility: hidden;
+}
+#idiomaotitulacion:hover>a>#cruz{
+    visibility: visible;
+}
+#guardarimprimir{
+    text-decoration: none;
+    background-color: #029ac4;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: #ffffff;
+    font-size: 18px;
+    right: 0;
+    position: absolute;
+    border-radius: 5px;
+}
+#guardarimprimir:hover{
+    background-color: #017696;
+}
+
+.experiencia:hover>a>#cruz{
+    visibility: visible;
+}
+#cruz:hover{
+    color: black;
+}
+.ponerTitulo{
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 5%;
+    background: #adacac;
+    border:0;
+    padding: 1% 2%;
+    border-radius: 3%;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+}
+p[class*="numero"]{
+    font-size: x-large;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0.3% 1.7%;
+    border: solid 4px;
+    border-color: #02556c;
+    border-radius: 50%;
+    background-color: #0091f8;
+}
+div[class*="linea"]{
+    display: inline-block;
+    width: 8%;
+    height: 8px;
+    background-color: #0091f8;
+    border-radius: 14%;
+}
+#siguiente{
+    background-color: #0091f8;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: #ffffff;
+    font-size: 18px;
+    float: right;
+}
+#contenido{
+    width: 100%;
+    margin-top: 1%;
+    border-top: solid 1px;
+    border-color: black;
+}
+#atras{
+    background-color: #f82500;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: #ffffff;
+    font-size: 18px;
+    float: left;
+}
+#atras:hover{
+    background-color: #ab1a00;
+}
+#botones{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 20%;
+}
+#contenedorformacion{
+    position: relative;
+    height: 500px;
+    margin-bottom: 9%;
+}
+#anyadirtitul{
+    background-color: rgb(42, 179, 0);
+    border: 0;
+    padding: 1% 2%;
+    position: absolute;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border-radius: 4%;
+    color: white;
+    left: 20%;
+    top: 40%;
+    font-size: 18px;
+}
+#anyadiridioma{
+    background-color: rgb(42, 179, 0);
+    border: 0;
+    padding: 1% 2%;
+    position: absolute;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border-radius: 4%;
+    color: white;
+    top: 40%;
+    right: 20%;
+    font-size: 20px;
+}
+#anyadiridioma:hover,#anyadirtitul:hover{
+    background-color: rgb(23, 95, 1);
+}
+#divtitulacion{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    padding: 4%;
+    margin-left: 8%;
+    top: 20%;
+    left: 0%;
+    position: absolute;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Jost', sans-serif;
+}
+#dividiomas{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    padding: 4%;
+    top: 20%;
+    right: 7%;
+    position: absolute;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Jost', sans-serif;
+}
+.typetext{
+    width: 80%;
+    padding: 1% 2%;
+    font-family: 'Jost', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 18px;
+}
+#guardar{
+    background-color: rgb(42, 179, 0);   
+    margin-top: 8%;
+}
+#guardar:hover{
+    background-color: rgb(32, 133, 1);   
+}
+#guardar,#cancelar,#guardarexp{
+    border-radius: 5px;
+    border:0;
+    padding: 2% 4%;
+    font-size: 18px;
+    color: white;
+}
+#idiomaotitulacion{
+    width: 40%;
+    padding: 4%;
+    position: relative;
+    font-family: 'Jost', sans-serif;
+}
+.experiencia{
+    width: 40%;
+    padding: 4%;
+    position: relative;
+    font-family: 'Jost', sans-serif;
+}
+.desc{
+    margin-left: 65%;
+    color: #02556c;
+}
+.centro{
+    margin-left: 31%;
+    color: #02556c;
+}
+#cancelar{
+    background-color: rgb(179, 0, 0);
+}
+#cancelar:hover{
+    background-color: rgb(147, 1, 1);
+}
+#anyadirxp{
+    background-color: rgb(1, 223, 34);
+    border: 0;
+    padding: 1.5% 3%;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-bottom: 20%;
+}
+#siguiente:hover{
+    background-color: #026ebb;
+    box-shadow: 0px 2px 10px rgba(0, 8, 255, 0.3);
+}
+#pasos{
+    text-align: center;
+    margin-top: 2%;
+}
+#divexperiencia{
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    box-shadow: 0px 2px 10px rgba(0, 8, 255, 0.3);
+    padding-bottom: 4%;
+    padding-top: 3%;
+    font-family: 'Jost', sans-serif;
+}
+#guardarexp{
+    background-color: rgb(42, 179, 0);   
+    margin-top: 8%;
+}
+#guardarexp:hover{
+    background-color: rgb(35, 142, 2);   
+}
+footer{
+    background-color: #0091f8;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-top: 11.9%;
+}

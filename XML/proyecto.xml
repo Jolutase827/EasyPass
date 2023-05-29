@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE em SYSTEM "../XML/proyecto.dtd">
+<em>
+    <usuarios>
+        <root>
+            <usuario>
+                <nombre>root</nombre>
+                <contrasenya>1234</contrasenya>
+                <imagen>imagenUsuario.png</imagen>
+            </usuario>
+        </root>
+        <noroot>
+        <usuariosnoroot>
+            <usuario>
+                <nombre>Jose Luis</nombre>
+                <correo>cau01111@gmail.com</correo>
+                <contrasenya>1234</contrasenya>
+                <imagen>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mercedes-Benz_Star_2022.svg/800px-Mercedes-Benz_Star_2022.svg.png</imagen>
+                <mas_datos>
+                </mas_datos>
+            </usuario>
+            <usuario>
+                <nombre>marta</nombre>
+                <correo>cau01111@gmail.com</correo>
+                <contrasenya>1234</contrasenya>
+                <imagen>imagenUsuario.png</imagen>
+                <mas_datos>
+                </mas_datos>
+            </usuario>
+            <usuario>
+                <nombre>marcela</nombre>
+                <correo>cau01111@gmail.com</correo>
+                <contrasenya>1234</contrasenya>
+                <imagen>imagenUsuario.png</imagen>
+                <mas_datos>
+                </mas_datos>
+            </usuario>
+        </usuariosnoroot>
+            <empresas>
+            </empresas>
+        </noroot>
+    </usuarios>
+    <curriculums>
+        <cv id="0">
+            <titulo></titulo>
+            <formacion>
+                <titulacion>
+                    <nombre></nombre>
+                    <fecha></fecha>
+                    <centro></centro>
+                </titulacion>
+                <idioma>
+                    <nombre></nombre>
+                    <nivel></nivel>
+                    <certificado></certificado>
+                </idioma>
+            </formacion>
+            <experiencia>
+                <item>
+                    <titulo></titulo>
+                    <sector></sector>
+                    <descripcion></descripcion>
+                    <fecha_inicio></fecha_inicio>
+                    <fecha_fin></fecha_fin>
+                </item>
+            </experiencia>
+        </cv>
+    </curriculums>
+</em>

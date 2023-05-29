@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT em (usuarios,curriculums)>
+<!ELEMENT curriculums (cv*)>
+<!ELEMENT cv (titulo,formacion,experiencia)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT formacion (titulacion*,idioma*)>
+<!ELEMENT experiencia (item*)>
+<!ELEMENT titulacion (nombre,fecha,centro)>
+<!ELEMENT idioma (nombre,nivel,certificado)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT certificado (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT centro (#PCDATA)>
+<!ELEMENT item (titulo,sector,descripcion,fecha_inicio,fecha_fin)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT fecha_fin (#PCDATA)>
+<!ATTLIST cv cuenta CDATA #IMPLIED>
+<!ATTLIST cv id CDATA #REQUIRED>
+<!ELEMENT usuarios (root, noroot)>
+<!ELEMENT root (usuario)>
+<!ELEMENT noroot (usuariosnoroot,empresas)>
+<!ELEMENT usuariosnoroot (usuario*)>
+<!ELEMENT empresas (usuario*)>
+<!ELEMENT usuario (nombre,sector?,correo?,contrasenya,imagen?,mas_datos?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT contrasenya (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT mas_datos (#PCDATA)>
+<!ELEMENT sector (#PCDATA)>

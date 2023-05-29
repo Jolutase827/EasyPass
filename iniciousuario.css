@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* https://blogs.comillas.edu/ope/wp-content/uploads/sites/13/2020/10/foto.jpg*/
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-image: url('https://estaticos-cdn.elperiodico.com/clip/92c71a13-ffcd-41ad-bac0-603b35a9e55b_alta-libre-aspect-ratio_default_0.jpg');
+}
+.logo{
+    position: relative;
+    width: 20%;
+}
+.logoDibujo{
+    width: 100%;
+}
+header{
+    position: relative;
+    padding: 20px;
+    background-color: #19A7CE;
+    z-index: 0;
+}
+
+
+  
+  /* Estilo del formulario */
+  form {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  #textoInfo{
+    color: #0091f8;
+  }
+  /* Estilo de los campos del formulario */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-top: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #444444;
+  }
+
+  
+  /* Estilo del botón de envío */
+  input[type="submit"] {
+    background-color: #0088cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #006699;
+    
+  }
+  
+  /* Estilo de los mensajes de error */
+  .errorNombre,
+  .errorEmail,
+  .errorContra {
+    margin: 0;
+    padding: 5px;
+    background-color: #f88c84;
+    color: rgb(57, 49, 49);
+    border-bottom: solid 3px;
+    border-color: #f63123;
+
+  }
+
+
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 100,
+  'opsz' 48;
+  color: #720a02;
+ 
+}
+#volver{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #006699;
+    color: white;
+    padding: 1.5%;
+    border-radius: 4%;
+}
+#volver:hover{
+    background-color: #014a6f;
+}
+  /* Estilo del mensaje de éxito */
+  #mensajeGuardado {
+    margin: 0;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    height: 370px;
+    margin-left: 25%;
+    margin-top: 39px;
+    margin-bottom: 10px;
+   
+  }
+  #iniciaSesion{
+    margin-top: 15px; 
+  }
+  #ainiciaSesion{
+    text-decoration: none;
+    color: #0091f8;
+  }
+  #ainiciaSesion:hover{
+    text-decoration:underline;
+  }
+footer{
+    background-color: #0091f8;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+#unError{
+    margin-top: 11.6%;
+}
+#noError{
+    margin-top: 15.6%;
+}
